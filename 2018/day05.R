@@ -20,7 +20,7 @@ react(input)
 
 #part2
 lengths <- sapply(letters, function(letter){
-  react(gsub(letter, '', input, ignore.case = TRUE))
+  nchar(react(gsub(letter, '', input, ignore.case = TRUE)))
 })
 min(lengths)
 
