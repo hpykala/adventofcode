@@ -49,6 +49,6 @@ dt[onEdge == FALSE][order(area, decreasing = TRUE)][1, area]
 
 #part2
 fsum <- function(a, b) {a+b}
-Reduce(sum, dt$distmat)
-sum(mat < 10000)
+disttoall <- Reduce(fsum, dt$distmat)
+sum(disttoall < 10000)
 
